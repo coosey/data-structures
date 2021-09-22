@@ -10,4 +10,16 @@ var Queue = function() {
   return instances;
 };
 
-var queueMethods = {};
+var queueMethods = {
+  enqueue: function(value) {
+
+  },
+
+  dequeue: function() {
+
+  },
+
+  size: function() {
+
+  }
+};
