@@ -17,10 +17,10 @@ var Queue = function() {
   someInstance.dequeue = function() {
     //if current count is > newCount
     if (count > newCount) {
-      var dequeue = storage[newCount];
+      var toBeRemoved = storage[newCount];
       delete storage[newCount];
       newCount++;
-      return dequeue;
+      return toBeRemoved;
     }
   };
 
