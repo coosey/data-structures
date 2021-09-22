@@ -19,11 +19,13 @@ var Queue = function() {
     if (count > newCount) {
       var dequeue = storage[newCount];
       delete storage[newCount];
+      newCount++;
+      return dequeue;
     }
   };
 
   someInstance.size = function() {
-    return count;
+    return Object.values(storage).length;
   };
 
   return someInstance;
