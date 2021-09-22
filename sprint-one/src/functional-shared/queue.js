@@ -12,14 +12,20 @@ var Queue = function() {
 
 var queueMethods = {
   enqueue: function(value) {
-
+    this.container[this.count] = value;
+    this.count++;
   },
 
   dequeue: function() {
-
+    var toBeRemoved = this.container[this.newCount];
+    if (this.count > this.newCount) {
+      delete this.container[this.newCount];
+      this.newCount++;
+      return toBeRemoved;
+    }
   },
 
   size: function() {
-
+    return Object.values(this.container).length;
   }
 };
