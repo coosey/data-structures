@@ -1,8 +1,25 @@
 var Stack = function() {
-  // Hey! Rewrite in the new style. Your code will wind up looking very similar,
-  // but try not not reference your old code in writing the new style.
-};
+  var instances = {};
+  //create a count & container in instances
 
-var stackMethods = {};
+  //use extend()
+
+  //return instances
+
+};
+//create push, pop, & size methods in stackMethods
+var stackMethods = {
+  push: function(value) {
+
+  },
+
+  pop: function() {
+
+  },
+
+  size: function() {
+
+  }
+};
 
 
