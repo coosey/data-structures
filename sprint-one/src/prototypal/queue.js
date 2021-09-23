@@ -16,7 +16,12 @@ var queueMethods = {
   },
 
   dequeue: function() {
-
+    if (this.count > this.newCount) {
+      this.count--;
+      var toBeRemoved = this.container[this.count];
+      delete this.container[this.count];
+      return toBeRemoved;
+    }
   },
 
   size: function() {
