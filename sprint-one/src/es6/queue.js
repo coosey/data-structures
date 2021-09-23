@@ -10,11 +10,16 @@ class Queue {
   }
 
   dequeue() {
-
+    if (this.count > this.newCount) {
+      var toBeRemoved = this.container[this.newCount];
+      delete this.container[this.newCount];
+      this.newCount++;
+      return toBeRemoved;
+    }
   }
 
   size() {
-
+    return Object.values(this.container).length;
   }
 
 }
