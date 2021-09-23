@@ -20,3 +20,12 @@ class Stack {
     return this.count;
   }
 }
+
+// var stacks = new Stack();
+// stacks.push('aaa');
+// stacks.push('bbb');
+// stacks.size();
+// stacks.pop();
+// stacks.size();
+// stacks.pop();
+// stacks.size();
