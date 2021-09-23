@@ -20,3 +20,8 @@ Stack.prototype.size = function() {
 };
 
 
+// var newStack = new Stack();
+// newStack.push('1');
+// newStack.push('2');
+// newStack.pop();
+// newStack.size();
