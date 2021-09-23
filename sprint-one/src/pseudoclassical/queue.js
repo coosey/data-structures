@@ -11,7 +11,6 @@ Queue.prototype.enqueue = function(value) {
 
 Queue.prototype.dequeue = function() {
   if (this.count > this.newCount) {
-    this.count--;
     var toBeRemoved = this.container[this.newCount];
     delete this.container[this.newCount];
     this.newCount++;
