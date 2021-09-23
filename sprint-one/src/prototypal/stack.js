@@ -15,11 +15,14 @@ var stackMethods = {
   },
 
   pop: function() {
-
+    if (this.count > 0) {
+      this.count--;
+    }
+    return this.container[this.count];
   },
 
   size: function() {
-
+    return this.count;
   }
 };
 
