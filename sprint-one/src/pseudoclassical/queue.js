@@ -10,9 +10,10 @@ Queue.prototype.enqueue = function(value) {
 };
 
 Queue.prototype.dequeue = function() {
-  var toBeRemoved = this.container[this.count];
   if (this.count > this.newCount) {
-    delete this.container[this.count];
+    this.count--;
+    var toBeRemoved = this.container[this.newCount];
+    delete this.container[this.newCount];
     this.newCount++;
     return toBeRemoved;
   }
