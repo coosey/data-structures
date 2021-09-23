@@ -17,9 +17,9 @@ var queueMethods = {
 
   dequeue: function() {
     if (this.count > this.newCount) {
-      this.count--;
       var toBeRemoved = this.container[this.newCount];
       delete this.container[this.newCount];
+      this.newCount++;
       return toBeRemoved;
     }
   },
