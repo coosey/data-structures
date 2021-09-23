@@ -1,4 +1,5 @@
-var Queue = function() {
+var Queue = function(name) {
+  this.name = name;
   this.count = 0;
   this.newCount = 0;
   this.container = {};
@@ -22,4 +23,8 @@ Queue.prototype.size = function() {
   return Object.values(this.container).length;
 };
 
-
+// var newQueue = new Queue();
+// newQueue.enqueue('x');
+// newQueue.enqueue('y');
+// console.log(newQueue.dequeue());
+// console.log(newQueue.size());
