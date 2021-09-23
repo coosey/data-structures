@@ -11,15 +11,16 @@ var Stack = function() {
 //create push, pop, & size methods in stackMethods
 var stackMethods = {
   push: function(value) {
-    this.container[this.count] = this.value;
+    this.container[this.count] = value;
     this.count++;
   },
 
   pop: function() {
     if (this.count > 0) {
       this.count--;
+      var toBeRemoved = this.container[this.count];
+      return toBeRemoved;
     }
-    return this.container[this.count];
   },
 
   size: function() {
