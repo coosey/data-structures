@@ -5,7 +5,8 @@ class Queue {
     this.newCount = 0;
   }
   enqueue(value) {
-
+    this.container[this.count] = value;
+    this.count++;
   }
 
   dequeue() {
