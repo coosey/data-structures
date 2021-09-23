@@ -11,7 +11,8 @@ var Queue = function() {
 var queueMethods = {
 
   enqueue: function(value) {
-
+    this.container[this.count] = value;
+    this.count++;
   },
 
   dequeue: function() {
@@ -19,7 +20,7 @@ var queueMethods = {
   },
 
   size: function() {
-
+    return Object.values(this.container).length;
   }
 };
 
